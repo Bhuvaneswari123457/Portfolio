@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhuvaneswari Chodisetty | Sky Quest Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud"><b id="lvl">Level 1</b><div id="track"><div id="bar"></div><span id="plane">✈️</span></div><b id="xp">0 XP</b><button id="snd" aria-label="Toggle sound">🔊</button><button id="theme" aria-label="Switch theme">🌙</button></div>
+<div class="cloud" style="top:110px;width:140px;height:40px;animation-duration:70s"></div>
+<div class="cloud" style="top:330px;width:200px;height:54px;animation-duration:110s;animation-delay:-40s"></div>
+<div class="cloud" style="top:620px;width:120px;height:34px;animation-duration:90s;animation-delay:-70s"></div>
+<main>
+<section class="hero" data-q="Start">
+<div class="ph"><img id="photo" alt="Bhuvaneswari" hidden><span>BC</span></div>
+<h1>Hi, I’m Bhuvaneswari.</h1>
+<p>Software engineer who builds fast Java and Kafka backends, full-stack apps and LLM workflows. Scroll to fly through my career, collect skills and unlock what I studied.</p>
+<div><a class="btn" href="#quests">Start the quest</a><a class="btn alt" href="#subjects">View subjects</a><a class="btn alt" id="cv" href="resume.pdf" download="Chodisetty_Bhuvaneswari_Resume.pdf">Download resume</a></div>
+<p class="about">B.Tech CSE, NIT Rourkela ’25 · Open to SDE1 and AI Engineer roles</p>
+</section>
+
+<section id="quests" data-q="Quest log">
+<h2>Quest log</h2><p class="sub">Tap an experience to open it. Each one is a real role.</p>
+<details><summary><span class="lv">Exp 1</span><div><h3>Barclays</h3><small>Full-Stack Intern, May to Jul 2024</small></div></summary><ul>
+<li>Built a secure CRUD web app with an Angular frontend and a Python Flask REST API for 100,000+ users.</li>
+<li>Designed Oracle SQL schemas for 1 million+ records, using SQLAlchemy for safe migrations.</li>
+<li>Led API testing and docs in Postman, in an Agile/Scrum team.</li></ul></details>
+<details><summary><span class="lv">Exp 2</span><div><h3>Gap Inc.</h3><small>Backend Intern, Jan to Jun 2025</small></div></summary><ul>
+<li>Built Spring Boot and Kafka microservices for NextGen Traffic Counters Japan, streaming 1,000+ records per second.</li>
+<li>Reached 89% coverage with JUnit and cleaned up code smells with SonarQube.</li>
+<li>Shipped zero-downtime releases with Spring Cloud Config, Docker and ArgoCD.</li>
+<li>Upgraded the Kafka environment and fixed compatibility issues.</li></ul></details>
+<details><summary><span class="lv">Exp 3</span><div><h3>FTP and Outlier</h3><small>Freelance, Sep 2025 to now</small></div></summary><ul>
+<li>FTP: architected a conversational logistics platform with a 5-bot design for Driver, Shipper and Receiver workflows, and owned the MVP end to end.</li>
+<li>Outlier: evaluated and fine-tuned LLM output across Python, Java and SQL.</li></ul></details>
+<details open><summary><span class="lv">Exp 4</span><div><h3>Snorkel, for Amazon</h3><small>Software Engineer, Aug 2026 to now</small></div></summary><ul>
+<li>Fixed thread leaks, memory leaks and stale topology polling in the AWS Advanced JDBC Wrapper during RDS/Aurora Blue/Green switchovers.</li>
+<li>Designed HostListProvider teardown hooks and thread-safe monitor shutdowns for clean resource cleanup.</li>
+<li>Automated topology re-initialization after switchover so connections keep routing correctly.</li></ul></details>
+</section>
+
+<section id="skills" data-q="Skill tree">
+<h2>Skill tree</h2><p class="sub">Tap a skill to collect it. Each one gives 10 XP.</p>
+<div id="tree"></div><p class="sub" id="skcount"></p>
+</section>
+
+<section id="education" data-q="Education">
+<h2>Education</h2><p class="sub">Where I studied.</p>
+<div class="grid">
+<div class="card"><h3>B.Tech in Computer Science and Engineering</h3><p>National Institute of Technology, Rourkela<br>2021 to 2025</p><b>CGPA 7.4</b></div>
+<div class="card"><h3>Intermediate</h3><p>Higher secondary education</p><b>96.2%</b></div>
+<div class="card"><h3>Class 10</h3><p>Secondary school education</p><b>CGPA 9.8</b></div>
+</div>
+</section>
+
+<section id="subjects" data-q="Subjects">
+<h2>Subjects</h2><p class="sub">What I studied at NIT Rourkela. Tap a subject to unlock it.</p>
+<details class="subj"><summary><span class="lv">📚</span><div><h3>Data Structures and Algorithms</h3><small>400+ problems solved</small></div></summary><ul><li>Arrays, strings, linked lists, stacks and queues</li><li>Trees, graphs, heaps and hashing</li><li>Sorting, searching, recursion and dynamic programming</li></ul></details>
+<details class="subj"><summary><span class="lv">📚</span><div><h3>Database Management Systems</h3><small>Relational design and SQL</small></div></summary><ul><li>SQL queries, joins and indexing</li><li>Normalization and schema design</li><li>Transactions and concurrency control</li></ul></details>
+<details class="subj"><summary><span class="lv">📚</span><div><h3>Object-Oriented Programming</h3><small>Java and design thinking</small></div></summary><ul><li>Classes, inheritance, polymorphism and abstraction</li><li>Interfaces, exceptions and collections</li><li>Design patterns for clean, testable code</li></ul></details>
+<details class="subj"><summary><span class="lv">📚</span><div><h3>Operating Systems</h3><small>How computers run programs</small></div></summary><ul><li>Processes, threads and scheduling</li><li>Synchronization, deadlocks and memory management</li><li>File systems and I/O</li></ul></details>
+<details class="subj"><summary><span class="lv">📚</span><div><h3>Computer Networks</h3><small>How systems talk to each other</small></div></summary><ul><li>TCP/IP, HTTP and DNS</li><li>Networking protocols and routing</li><li>Sockets and client-server communication</li></ul></details>
+</section>
+
+<section id="projects" data-q="Projects">
+<h2>Projects</h2><p class="sub">Things I built beyond work.</p>
+<div class="grid">
+<div class="card"><div class="thumb">🚚</div><h3>FTP logistics bots</h3><p>Five decoupled bots manage live state for drivers, shippers and receivers, with concurrency-safe database design.</p><button class="btn alt pj" data-p="ftp">View details</button><a class="btn" href="https://bhuvaneswari123457.github.io/FTP-REPO/" target="_blank" rel="noopener">Live demo</a></div>
+<div class="card"><div class="thumb">🔎</div><h3>Smart Research Assistant</h3><p>Chromium extension plus a Spring Boot backend that clips, tags and summarizes highlighted web text.</p><button class="btn alt pj" data-p="sra">View details</button></div>
+<div class="card"><div class="thumb">💓</div><h3>ECG Signal Classification</h3><p>CNN and Random Forest models on 21,000+ PTB-XL records using wavelet features. 71.22% multiclass accuracy.</p><button class="btn alt pj" data-p="ecg">View details</button></div>
+</div>
+</section>
+
+<section id="badges" data-q="Achievements">
+<p class="sub">Certifications</p>
+<div class="badges">
+<div class="badge"><i>⚛️</i>Full-Stack React with Spring Boot, Pearson</div>
+<div class="badge"><i>☁️</i>Associate Cloud Engineer prep, Google Cloud</div>
+<div class="badge"><i>🐧</i>Linux and SQL, Tools of the Trade</div>
+<div class="badge"><i>🤖</i>Claude 101, Anthropic Education</div>
+<div class="badge"><i>🧠</i>AI Fluency: Framework and Foundations</div>
+</div>
+</section>
+
+<section id="contact" data-q="Final level">
+<h2>Final level: let’s talk</h2><p class="sub">Hiring for SDE1 or AI Engineer? I’d love to hear from you.</p>
+<a class="btn" href="mailto:bhuvaneswarichodisetty@gmail.com">Email me</a>
+<a class="btn alt" href="https://linkedin.com/in/bhuvaneswari-chodisetty-98b02b25a">LinkedIn</a>
+<a class="btn alt" href="https://github.com/Bhuvaneswari123457">GitHub</a>
+<a class="btn alt" id="cv2" href="resume.pdf" download="Chodisetty_Bhuvaneswari_Resume.pdf">Download resume</a>
+</section>
+</main>
+<footer>© 2026 Chodisetty Bhuvaneswari. All rights reserved.</footer>
+<dialog id="dlg"><h3 id="dt"></h3><p id="dd"></p><div class="chips" id="ds"></div><p><a id="dl" target="_blank" rel="noopener">Open source code</a></p><button class="btn" id="dx">Close</button></dialog>
+<div id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
